@@ -68,14 +68,7 @@ const Skills = () => {
             <span className="font-bold">record time</span> is our{" "}
             <span className="font-bold">Superpower</span>
           </motion.h1>
-          <motion.p
-            className="py-5 font-bold text-lime-200 sm:text-3xl underline"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            TRY US
-          </motion.p>
+         
         </div>
 
         <motion.div
@@ -110,9 +103,20 @@ const Skills = () => {
               <h1 className="font-semibold">{item.timeline}</h1>
               <hr className="border-t border-gray-600 my-4" />
             </div>
+            
           ))}
+         
         </motion.div>
+        <motion.p
+            className="py-5 font-bold text-lime-200 sm:text-3xl underline"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            TRY US
+          </motion.p>
       </motion.div>
+      
     </>
   );
 };

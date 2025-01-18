@@ -37,7 +37,7 @@ const FAQs = () => {
   return (
     <div className="flex flex-col items-center p-6  mb-12">
       <h1 className="text-2xl sm:text-3xl font-semibold mb-6">FAQ's</h1>
-      <div className="w-full max-w-3xl h-96 overflow-y-auto bg-white shadow-md rounded-lg p-4">
+      <div className="w-full max-w-3xl h-96 overflow-y-auto bg-white  rounded-lg p-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-200 py-4">
             <button
@@ -56,6 +56,11 @@ const FAQs = () => {
             )}
           </div>
         ))}
+      </div>
+      <div className="py-4">
+        <h1 className="text-sm">For more Query. 
+          <a href="#home" className="underline text-pink-600 font-semibold"> Contact Us</a>
+        </h1>
       </div>
     </div>
   );
