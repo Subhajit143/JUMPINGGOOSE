@@ -16,7 +16,7 @@ const Skills = () => {
     <>
       {/* Skills Section */}
       <motion.div
-        className="bg-lime-300 flex flex-col items-center text-center py-16 my-20 px-4"
+        className="bg-[#E6FF69] flex flex-col items-center text-center py-16 my-20 px-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -105,16 +105,16 @@ const Skills = () => {
             </div>
             
           ))}
-         
-        </motion.div>
-        <motion.p
-            className="py-5 font-bold text-lime-200 sm:text-3xl underline"
+             <motion.p
+            className="py-5 font-bold text-lime-200 sm:text-3xl sm:flex underline"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             TRY US
           </motion.p>
+        </motion.div>
+    
       </motion.div>
       
     </>
